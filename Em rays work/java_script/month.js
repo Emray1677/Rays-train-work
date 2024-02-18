@@ -13,7 +13,6 @@
 // }
 
 
-
 let month = prompt("enter a month digit")
 
 let currentMonth = ""
@@ -133,5 +132,4 @@ if (month == 2) {
 //     console.log(userYear)
 // }
  
-
 
