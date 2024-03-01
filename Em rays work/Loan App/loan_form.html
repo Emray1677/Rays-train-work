@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan form</title>
+    <link rel="stylesheet" href="./Loan.css">
+</head>
+
+<body>
+
+    <section class="form_site">
+        <h1 style="text-align: center;font-size: 0.8cm;margin-top: 0.5cm;padding-top: 0.5cm;">LOAN APPLICATION</h1>
+        <div class="form_siteone" style="margin-top: 1cm;">
+            <p>Enter First Name: 
+                <input id="firstname" style="width: 72%;height: 0.8cm;" type="text"></p>
+            <p>Enter Second Name: 
+                <input id="secondname" style="width: 68%;height: 0.8cm;" type="text"></p>
+            <p>Enter Other Name: 
+                <input style="width: 70%;height: 0.8cm;" type="text"></p>
+            <div style="display: flex;">
+                <p>Enter Monthly Earn: 
+                    <input id="MonthlyEarn" style="width: 30%;height: 0.8cm;" type="number">
+                </p>
+                <p style="margin-left: -0.4cm;width: 70%;">
+                   Enter Last loan History :
+                   <select  name="" id="CollectionMonth" style="width: 40%;height: 0.8cm;">
+                    <option value="Current">Last loan History</option>
+                    <option value="1">More than 6 months</option>
+                    <option value="2">Less than 6 months</option>
+                   </select>
+                </p>
+            </div>
+            <div style="display: flex;">
+                <p style="width: 80%;">Last Deposite Date: <input id="lastDeposite" style="width: 60%;height: 0.8cm;" type="date"></p>
+            </div>
+            <div>
+                <p>Enter loan amount:
+                    <input id="loan_amount" style="width: 33%;height: 0.8cm;" type="text">
+                </p>
+            </div>
+            <div>
+                <p>Enter repayment date: <input id="repaymentDate" style="width: 33%;height: 0.8cm;"
+                        type="datetime-local"></p>
+            </div>
+            <div>
+                <select name="" id="account_type" style="width: 40%;height: 0.8cm;">
+                    <option value="">Select an account type</option>
+                    <option value="savings">Savings</option>
+                    <option value="current">Current </option>
+                </select>
+            </div>
+            <section style="text-align: right;margin-right: 1cm;margin-top: 0.7cm;">
+                <button id="form_btn"
+                    style="width: 3cm;
+                height: 1cm;border-radius: 0.3cm;background-color: #676767;color: white;cursor: pointer;border: 0;">Submit</button>
+            </section>
+        </div>
+    </section>
+    <div id="text_show"
+        style=" position: fixed; top: 0;
+         bottom: 0; right: 0; left: 0; justify-content: center;
+          align-items: center; background-color: #0000008a; ">
+        <div id="test_result"
+            style="height: 150px; width: 400px;
+             border-radius: 10px; background-color: white;
+              text-align: center; padding-top: 10px;">
+        </div>
+        <button style="width: 1.5cm;height: 1cm;
+        background-color: aqua;margin-left: -2cm;
+        margin-top: 2cm;background-color: rgb(69, 66, 66);"><a href="./Loan.html"
+             style="text-decoration: none;
+             color: rgb(255, 255, 255);font-size: 0.5cm;"
+             >Ok</a>
+             </button>
+    </div>
+
+    <script src="./Loan.js"></script>
+    <script src="https://kit.fontawesome.com/e45170711e.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
