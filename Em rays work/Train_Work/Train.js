@@ -70,8 +70,12 @@ function tripDate() {
     let totOutcome = Math.floor
         (diffrence / (1000 * 60 * 60 * 24))
     console.log(totOutcome + "  Days remaing");
+    if (totOutcome >= today){
+
+    }else{
+        alert("Trip date error")
+    }
     DateOFTrip = totOutcome;
-    
 }
 function EmailAddress() {
     if (EmailAdd.value === "") {
