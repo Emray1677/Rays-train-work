@@ -72,8 +72,6 @@ function tripDate() {
     console.log(totOutcome + "  Days remaing");
     if (totOutcome >= today){
 
-    }else{
-        alert("Trip date error")
     }
     DateOFTrip = totOutcome;
 }
