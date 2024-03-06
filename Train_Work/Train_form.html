@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Train.css">
+</head>
+<body>
+<section class="form_home">
+
+    <div id="form_title">
+        <h1>Ray's Rail Booking Form</h1>
+    </div>
+
+<section class="loan_form">
+    <div class="loan_formchild hide_scrollbar">
+        <section class="margin_btm">
+            <p style="margin-bottom: 0">
+                Enter Full Name :
+                <input id="fullName" type="text" class="validation">
+                <div id="nameErr" class="err"></div>
+            </p>
+        </section>
+
+       <div style="display: flex;gap: 0.4cm;">
+       <section class="margin_btm"style="width: 70%;">
+        <p style="margin: 0;">
+            Enter Date Of Birth :
+            <input id="BirthDate" type="date" style="width: 4cm;">
+            <div id="BirthErr" class="err"></div>
+        </p>
+       </section>
+        <section style="display: flex;flex-direction: column;">
+            <select name="" id="TrainService"
+         style="height: 1cm;width: 5cm;margin-right: -0.5cm;
+         border-radius: 0.6cm;padding: 0px 10px;
+         background-color: rgba(221, 234, 234, 0.767);">
+            <option id="optionone" value="Train Service">Train Service</option>
+            <option id="optiontwo" value="First Class">First Class</option>
+            <option id="optionthree" value="Economy Class">Economy Class</option>
+        </select>
+        <div id="serviceErr" class="err">
+        </div>
+        </section>
+       </div>
+
+       <div style="display: flex;gap: 0.6cm;">
+        <section class="margin_btm">
+            <p style="margin: 0;">
+                Enter Date Of Trip :
+                <input id="TripDate" type="date" style="width: 4cm;">
+                <div id="TripErr" class="err"></div>
+            </p>
+        </section>
+
+        <section style="display: flex;flex-direction: column;">
+            <select name="" id="Train_Service"
+         style="height: 1cm;width: 4.5cm;margin-right: -0.5cm;
+         border-radius: 0.6cm;padding: 0px 10px;
+         background-color: rgba(221, 234, 234, 0.767);">
+            <option id="trainOptOne" value="Trip Service">Trip Service</option>
+            <option id="trainOptTwo" value="One Way Trip">One Way Trip</option>
+            <option id="trainOptThree" value="Return Trip">Return Trip</option>
+        </select>
+        <div id="WayErr" class="err">
+        </div>
+        </section>
+       </div>
+
+       <section class="margin_btm">
+        <p style="margin: 0;">
+            Enter Email Address:
+            <input id="EmailAdd" type="email">
+            <div id="EmailErr" class="err"></div>
+           </p>
+       </section>
+
+       <section class="margin_btm">
+        <p style="margin: 0;">
+            Enter Phone Address:
+            <input id="PhoneAdd" type="tel">
+            <div id="PhoneErr" class="err"></div>
+           </p>
+       </section>
+
+       <section class="margin_btm">
+        <p style="margin: 0;">
+            Enter Time Of Trip:
+            <input id="TripTime" type="time" style="width: 7cm;">
+            <div id="TimeErr" class="err"></div>
+           </p>
+       </section>
+
+       <section class="margin_btm">
+        <p style="margin: 0;">
+            Destination/Trip Address:
+            <input id="TripAddress" type="text" style="width: 7cm;">
+            <div id="DestinationErr" class="err"></div>
+           </p>
+       </section>
+
+       <section>
+        <h1 style="margin-bottom: 0.4cm;"><a>Optional,</a>  For The Return Trip</h1>
+        <p>
+            Return Date:
+            <input style="width: 8.5cm;" type="date">
+        </p>
+            <p>
+                Return Time:
+                <input style="width: 8cm;" type="time">
+            </p> 
+       </section>
+
+       <div class="After_submit" id="After_submit">
+        <ul id="After_submitone" class="After_submitone hide_scrollbar">
+            <div>
+                <p id="GoodReply" style="font-style: italic;color: green;font-size: 0.9cm;">GOOD</p>
+                <p id="badReply" style="font-style: italic;color: red;font-size: 0.9cm;">BAD</p>
+                <ul id="myList">
+
+                </ul>
+            </div>
+            <button id="ok_btn" style="width: 3cm;height: 0.7cm;">Ok</button>
+        </ul>
+       </div>
+
+       <section id="submit_btn">
+        <span id="err"></span>
+        <button>Submit</button>
+       </section>
+
+    </div>
+</section>
+
+
+</section>
+
+
+<script src="./Train.js"></script>
+</body>
+</html>
